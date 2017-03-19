@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Inconsolata', monospace;
 	
 }
 
@@ -14,32 +15,88 @@ body{
 	flex-direction: column;
 	align-items: center;
 }
+
+header{
+	margin-top: 39px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+input{
+	height: 44px;
+	width: 80%;
+	border: 2px solid #e5e5e5;
+	border-radius: 5px;
+	padding-left: 14px;
+	font-size: 15.75px;
+	color: #858585;
+}
+input:focus{
+	outline: none;
+	color: #858585;
+}
+input::-webkit-input-placeholder { 
+	color: #858585;
+}
+
+input::-moz-placeholder { 
+	color: #858585;
+}
+
+
 #pics{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: space-between;
-	margin: 33px 60px;
-	min-height: 2763px;
+	margin: 12px 60px 33px;
 }
 #pics a{
-	/* margin: 20px auto; */
-	/* padding: 30px; */
-}
-#pics a:not(first-child){
-	/* margin-top: 50px; */
-}
-#pics a:last-child{
-	/* margin-bottom: 80px; */
+	margin: 30px;
 }
 
-@media screen and (min-width: 520px) {
-	#pics{
-		justify-content: space-between;
-		min-height: 1763px;
-		margin: 33px 90px;
+@media screen and (min-width: 350px) {
+	input{
+		width: 75%;
 	}
-	
-	
-	
+}
+
+@media screen and (min-width: 430px) {
+	input{
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 537px) {
+	#pics{
+		margin: 12px 0 33px;
+	}
+	input{
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 797px) {
+	input{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1057px) {
+	input{
+		width: 36%;
+	}
+	#pics{
+		margin: 2px 0 33px;
+	}
+	header{
+		margin-top: 29px;
+	}
+}
+
+
+@media screen and (min-width: 1280px) {
+	#pics{
+		max-width: 1040px;
+	}
 }
