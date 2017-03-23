@@ -5,6 +5,9 @@
 	font-family: 'Inconsolata', monospace;
 	
 }
+p{
+	display: none;
+}
 
 a img{
 	vertical-align: top;
