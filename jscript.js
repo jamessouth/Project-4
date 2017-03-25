@@ -2,16 +2,19 @@ var $searchbox = $('.search');
 
 var $paras = $('p');
 var paras = [];
-var results = [];
+
 
 
 for (var i = 0; i < $paras.length; i++){
 		paras.push($paras[i].innerHTML.toLowerCase());
+		
 	}
+	
+
+
 
 $searchbox.on('input', function(){
-
-	for (var i = 0; i < paras.length; i++){
+		for (var i = 0; i < paras.length; i++){
 		// console.log(paras[i].includes($searchbox.val()));
 		
 		if (paras[i].includes($searchbox.val().toLowerCase()) === false){
@@ -25,14 +28,21 @@ $searchbox.on('input', function(){
 		}
 	}
 	console.log('\n');
-	// console.log($searchbox.val());
+
 });
+
+$('a').on('click', function(){
+	console.log('ddddddddddddddddddd');
+	
+});
+
+
 
 window.addEventListener('pageshow', function(event) {
     console.log('pageshow:');
     console.log(event);
 	
-	for (var i = 0; i < paras.length; i++){
+		for (var i = 0; i < paras.length; i++){
 		// console.log(paras[i].includes($searchbox.val()));
 		
 		if (paras[i].includes($searchbox.val().toLowerCase()) === false){
@@ -46,10 +56,6 @@ window.addEventListener('pageshow', function(event) {
 		}
 	}
 	console.log('\n');
-	
-	
-	
-	
 	
 	
 });
