@@ -18,11 +18,14 @@ $searchbox.on('input', function(){
 		// console.log(paras[i].includes($searchbox.val()));
 		
 		if (paras[i].includes($searchbox.val().toLowerCase()) === false){
+			
 			$($paras[i]).parent('a').hide();
+			
 			console.log(paras[i].includes($searchbox.val().toLowerCase()), paras[i]);
 		} else {
 			
 			$($paras[i]).parent('a').show();
+			
 			console.log(paras[i].includes($searchbox.val().toLowerCase()), paras[i]);
 			
 		}
@@ -30,19 +33,19 @@ $searchbox.on('input', function(){
 	
 	console.log('\n');
 	
-	$('a').filter(function(){
-		return $(this).css('display') !== 'none';
-		}).featherlightGallery();
-	
-	
-	
-	
-	
-	
-	
 	
 	
 });
+
+
+
+
+
+$('#pics').featherlightGallery({filter: 'a:visible'});
+
+
+
+
 
 
 // window.addEventListener('pageshow', function(event) {
@@ -66,14 +69,4 @@ $searchbox.on('input', function(){
 	
 	
 // });
-
-
-
-
-
-
-
-
-
-
 

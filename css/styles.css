@@ -58,6 +58,16 @@ input::-moz-placeholder {
 	margin: 30px;
 }
 
+.featherlight .featherlight-content{
+	padding: 0;
+	border: 0;
+	
+}
+
+
+
+
+
 @media screen and (min-width: 350px) {
 	input{
 		width: 75%;
