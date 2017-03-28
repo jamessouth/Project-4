@@ -58,14 +58,68 @@ input::-moz-placeholder {
 	margin: 30px;
 }
 
+
+/* -------------------------------------------- 
+
+NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
+
+-------------BASE FEATHERLIGHT-----------------------------------*/
+
+
 .featherlight .featherlight-content{
 	padding: 0;
 	border: 0;
+	overflow: visible;
 	
+}
+
+.featherlight .featherlight-image{
+	width: 60%;
+}
+.featherlight:last-of-type{background:rgba(0,0,0,0.95)}
+
+
+/* ----------------FEATHERLIGHT GALLERY--------------------------------- */
+
+
+
+.featherlight-next,
+.featherlight-previous{
+	background-color: rgba(25,255,255,1);
+	top: 40%;
+	bottom: 40%;
+	left: 99%;
+	right: 5%;
+}
+
+.featherlight-previous{
+	left: 5%;
+	right: 99%;
+}
+
+.featherlight-next:hover,
+.featherlight-previous:hover{
+	background:rgba(25,255,255,1)
+}
+
+.featherlight-next span,
+.featherlight-previous span{
+	display:inline-block
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------ */
 
 
 @media screen and (min-width: 350px) {
