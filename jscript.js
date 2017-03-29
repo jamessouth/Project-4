@@ -41,9 +41,29 @@ $searchbox.on('input', function(){
 
 
 
-$('#pics').featherlightGallery({filter: 'a:visible'});
+$('#pics').featherlightGallery({
+	
+	filter: 'a:visible',
+	previousIcon: '&#60;',
+	nextIcon: '&#62;',
+	
+	afterContent: function() {
+		
+		var caption = this.$currentTarget.find('p').text();
+		this.$instance.find('.caption').remove();
+		$('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+	}
+	
+	
+	
+});
 
 
+		     
+		//          
+		// galleryFadeIn: 100,          
+		// galleryFadeOut: 300          
+	
 
 
 
