@@ -47,12 +47,26 @@ $('#pics').featherlightGallery({
 	previousIcon: '&#60;',
 	nextIcon: '&#62;',
 	
-	afterContent: function() {
-		
-		var caption = this.$currentTarget.find('p').text();
-		this.$instance.find('.caption').remove();
-		$('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+	
+	beforeOpen: function(){
+		$('img').css("width", "10px");
+		$('a').css("margin", "0");
 	}
+	
+	
+	
+	// beforeClose: 
+	
+	
+	// afterContent: function() {
+		
+		// var caption = this.$currentTarget.find('p').text();
+		// this.$instance.find('.caption').remove();
+		// $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+	// }
+	
+	
+	
 	
 	
 	
