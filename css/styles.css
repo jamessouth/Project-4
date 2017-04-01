@@ -70,7 +70,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 }
 
 .featherlight .featherlight-image{
-	width: 50%;
+	width: 100%;
 }
 
 .featherlight:last-of-type{background:rgba(0,0,0,0.95);}
@@ -198,7 +198,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 	}	
 	
 	.featherlight .featherlight-image{
-		width: 80%;
+		width: 60%;
 	}
 	
 	.featherlight .featherlight-content{
