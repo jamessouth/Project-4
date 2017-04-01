@@ -73,7 +73,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 	width: 100%;
 }
 
-.featherlight:last-of-type{background:rgba(0,0,0,0.75);}
+.featherlight:last-of-type{background:rgba(0,0,0,0.95);}
 
 .featherlight .featherlight-close-icon{
 	line-height: 20px;
@@ -123,6 +123,51 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 
 /* ------------------------------------------------------ */
 
+/* @media screen and (max-height: 520px) and (orientation: landscape){	 */
+	/* .featherlight .featherlight-content{ */
+		/* top: 2%; */
+		/* vertical-align: baseline; */
+	/* } */
+	
+	/* .featherlight .featherlight-image{ */
+		/* width: 80%; */
+	/* } */
+/* } */
+
+/* @media screen and (max-height: 330px) and (orientation: landscape){	 */
+	/* .featherlight .featherlight-image{ */
+		/* width: 70%; */
+	/* } */
+/* } */
+
+@media screen and (min-aspect-ratio: 13/10) and (max-aspect-ratio: 2/1){	
+	.featherlight .featherlight-content{
+		top: 2%;
+		vertical-align: baseline;
+	}
+	
+	.featherlight .featherlight-image{
+		width: 80%;
+	}
+}
+
+
+
+@media screen and (max-aspect-ratio: 2/1) and (max-height: 330px){	
+	
+	
+	.featherlight .featherlight-image{
+		width: 75%;
+	}
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 350px) {
 	input{
 		width: 75%;
@@ -148,12 +193,16 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 }
 
 @media screen and (min-width: 750px){
+	input{
+		width: 50%;
+	}	
+	
 	.featherlight .featherlight-image{
-		width: 90%;
+		width: 80%;
 	}
 	
 	.featherlight .featherlight-content{
-		top: 10%;
+		top: 8%;
 		vertical-align: baseline;
 	}
 	
@@ -172,12 +221,6 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 	.caption{
 		max-width: 600px;
 	}
-}
-
-@media screen and (min-width: 797px) {
-	input{
-		width: 50%;
-	}	
 }
 
 @media screen and (min-width: 850px){
