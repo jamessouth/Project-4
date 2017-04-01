@@ -115,7 +115,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
     left: 0;
 	color: white;
 	width: 100%;
-	height: 72px;
+	max-height: 72px;
 	max-width: 400px;
 	margin: auto;
 	margin-top: 20px;
@@ -124,24 +124,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 
 /* ------------------------------------------------------ */
 
-/* @media screen and (max-height: 520px) and (orientation: landscape){	 */
-	/* .featherlight .featherlight-content{ */
-		/* top: 2%; */
-		/* vertical-align: baseline; */
-	/* } */
-	
-	/* .featherlight .featherlight-image{ */
-		/* width: 80%; */
-	/* } */
-/* } */
-
-/* @media screen and (max-height: 330px) and (orientation: landscape){	 */
-	/* .featherlight .featherlight-image{ */
-		/* width: 70%; */
-	/* } */
-/* } */
-
-@media screen and (min-aspect-ratio: 13/10) and (max-aspect-ratio: 22/10){	
+@media screen and (min-aspect-ratio: 13/10) and (max-aspect-ratio: 2/1){	
 	.featherlight .featherlight-content{
 		top: 2%;
 		vertical-align: baseline;
@@ -153,21 +136,15 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 }
 
 
-
-@media screen and (max-aspect-ratio: 22/10) and (max-height: 330px){	
+@media screen and (orientation: landscape) and (max-height: 360px){
+	.featherlight-swipe-aware .featherlight-image{
+		height: 242px;
+	}
 	
-	
-	.featherlight .featherlight-image{
-		width: 75%;
+	.caption{
+		margin-top: 15px;
 	}
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 350px) {
 	input{
@@ -262,6 +239,3 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 		max-width: 1040px;
 	}
 }
-
-
-
