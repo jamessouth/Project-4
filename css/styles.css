@@ -71,7 +71,6 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 
 .featherlight .featherlight-image{
 	width: 100%;
-	height: 50%;
 }
 
 .featherlight:last-of-type{background:rgba(0,0,0,0.95);}
@@ -176,7 +175,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 	}	
 	
 	.featherlight .featherlight-image{
-		width: 60%;
+		width: 80%;
 	}
 	
 	.featherlight .featherlight-content{
@@ -203,7 +202,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 
 @media screen and (min-width: 850px){
 	.featherlight .featherlight-image{
-		width: 25%;
+		width: 75%;
 	}
 	.featherlight-next{
 		right: -22%;
@@ -224,7 +223,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 		margin-top: 29px;
 	}
 	.featherlight .featherlight-image{
-		width: 40%;
+		width: 70%;
 	}
 	.featherlight-next{
 		right: -28%;
