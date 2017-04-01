@@ -71,7 +71,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 
 .featherlight .featherlight-image{
 	width: 100%;
-	height: 100px;
+	height: calc(100% - 72px);
 }
 
 .featherlight:last-of-type{background:rgba(0,0,0,0.95);}
