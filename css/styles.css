@@ -123,7 +123,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 
 /* ------------------------------------------------------ */
 
-@media screen and (min-aspect-ratio: 13/10) and (max-aspect-ratio: 200/100){	
+@media screen and (min-aspect-ratio: 13/10) and (max-aspect-ratio: 22/10){	
 	.featherlight .featherlight-content{
 		top: 2%;
 		vertical-align: baseline;
