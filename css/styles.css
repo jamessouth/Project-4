@@ -73,7 +73,7 @@ NOTE: ALL MEDIA QUERIES DELETED FROM BOTH FEATHERLIGHT CSS FILES
 	width: 100%;
 }
 
-.featherlight:last-of-type{background:rgba(0,250,0,0.65);}
+.featherlight:last-of-type{background:rgba(0,0,0,0.95);}
 
 .featherlight .featherlight-close-icon{
 	line-height: 20px;
